@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="background-container">
+    <h2 id="clock">00:00</h2>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <form class="hidden" id="login-form">
+    <input required maxlength="15" type="text" placeholder="What is your name?" />
+    <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <div class="content-box">
+            <div class="content-column">
+            <form id="todo-form">
+                <h2 id="todo-header">오늘의 할일</h2>
+                <input type="text" placeholder="To-do List" required />
+            </form>
+            <ul id="todo-list"></ul>
+            </div>    
+            <div class="content-column">
+                <input type="text" id="searchInput" placeholder="Search on Google">
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="content-column widget" >
+                <h2 id="widget-header">나만의 위젯</h2>
+                <div class="widget_item">코딩 음악 <a href="https://youtu.be/CfPxlb8-ZQ0" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-music"></i></a></div>
+                <div class="widget_item">내 블로그 <a href="https://blog.naver.com/bbangjun21" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book"></i></a> </div>
+                <div class="widget_item">스톱워치 <a href="https://pomofocus.io/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-stopwatch"></i></a></div>
+            </div>
+    </div>
+    <div id="quote">
+        <span></span>
+        <span id="author"></span>
+    </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
+    <script src="https://kit.fontawesome.com/abb1d3c02c.js" crossorigin="anonymous"></script>
+</body>
+</html>
